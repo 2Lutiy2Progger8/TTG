@@ -5,7 +5,7 @@ import {useTelegram} from "./hooks/useTelegram";
 const tg = window.Telegram.WebApp
 function App() {
 
-    const {onToggleButton, onClose} = useTelegram()
+    const {onToggleButton, onClose, tg } = useTelegram()
 
     useEffect(()=>{
         tg.ready()
